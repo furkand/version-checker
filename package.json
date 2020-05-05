@@ -1,0 +1,39 @@
+{
+  "name": "version-checker",
+  "version": "1.0.0",
+  "description": "version checker for javascript and php projects",
+  "main": "dist/main.js",
+  "repository": "",
+  "author": "Furkan Demirturk",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prestart:prod": "rimraf dist && npm run build",
+    "start:prod": "node dist/main.js",
+    "start": "nodemon",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "devDependencies": {
+    "@types/agenda": "^2.0.6",
+    "@types/cors": "2.8.6",
+    "@types/dotenv": "8.2.0",
+    "@types/express": "4.17.6",
+    "@types/express-jwt": "0.0.42",
+    "@types/helmet": "0.0.45",
+    "@types/joi": "^14.3.4",
+    "@types/node": "13.13.4",
+    "nodemon": "2.0.2",
+    "prettier": "^1.19.1",
+    "ts-node": "8.6.2",
+    "tslint": "6.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "get-repo-package-json": "^2.0.0",
+    "is-outdated": "^1.2.2"
+  }
+}
