@@ -31,8 +31,8 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "get-repo-package-json": "^2.0.0",
     "is-outdated": "^1.2.2"
   }
